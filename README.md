@@ -32,6 +32,19 @@ Author: [WGST](https://wgst.at)
 5. Set the conversion name, value, currency, and lookback window.
 6. Copy the feed URL.
 
+## Releases
+
+GitHub Actions builds a ready-to-install `freeclid.zip` on every push to `main`, on manual workflow runs, and on version tags.
+
+To publish a downloadable GitHub Release, push a tag like:
+
+```sh
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The workflow creates or updates the matching GitHub Release and attaches `freeclid.zip`.
+
 ## Google Ads Setup
 
 1. In Google Ads, enable auto-tagging first under **Settings > Account settings**.
